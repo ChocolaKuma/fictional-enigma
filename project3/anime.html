@@ -1,0 +1,401 @@
+<!doctype html>
+<html><head>
+
+
+<meta charset="iso-8859-1">
+<title>Project 3</title>
+<style>
+body
+{
+background:url(images/bg.jpg) repeat-x top #fff;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+margin:0px auto auto auto;
+color:#416271;
+}
+p{
+text-align:justify;
+line-height:14px;
+margin:0px;
+}
+span{
+color:#7cb805;
+}
+a{
+text-decoration:none;
+color:#416271;
+}
+h1{
+width:225px;
+margin:0 0 5px 0;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#8c847a;
+padding:5px 0 3px 0;
+border-bottom:1px #CCCCCC dashed;
+}
+#main_container{
+width:900px;
+height:auto;
+margin:auto;
+padding:0px;
+position:relative;
+background:url(images/top_bg.jpg) no-repeat left top;
+}
+.main_content{
+width:700px;
+height:auto;
+margin:auto;
+}
+.parrot{
+position:absolute;
+top:0px;
+left:45px;
+}
+#header{
+width:700px;
+height:135px;
+margin:auto;
+}
+.logo{
+padding:55px 0 0 115px;
+left:0;
+top:0;
+}
+.top_center_box{
+width:700px;
+height:19px;
+background:url(images/top_box.gif) no-repeat center;
+}
+.center_box{
+width:700px;
+background-color:#FFFFFF;
+}
+/*---------------- menu tab----------------------*/
+#menu_tab{
+width:663px;
+height:51px;
+font-family:Arial, Helvetica, sans-serif;
+padding:0px;
+margin:auto;
+background:url(images/menu_bg.gif) no-repeat center;
+}
+
+ul.menu {
+list-style-type:none; display:block; width:420px; 
+margin: auto; padding:0px; background:none;}
+
+ul.menu li {
+display:inline;
+font-size:13px;
+font-weight:bold;
+line-height:51px;}
+
+ul.menu li.divider {
+display:block;
+float:left;
+width:1px;
+height:51px;
+padding:0px ;
+margin:0px;
+background:url(images/divider.gif) no-repeat center;
+}
+
+a.nav:link, a.nav:visited {
+display:block; float:left; padding:0px; margin:0;width: auto; margin:0px 14px 0px 14px; text-align:center;
+text-decoration:none; background:none; color:#62584d;}
+
+a.nav_selected:link, a.nav_selected:visited {
+display:block; float:left; padding:0px; margin:0;width: auto;margin:0px 14px 0px 14px;text-align:center;
+text-decoration:none; color: #62584d; background:url(images/menu_arrow.gif) no-repeat top center;}
+
+a.nav:hover {
+color: #62584d; text-decoration:none;background:url(images/menu_arrow.gif) no-repeat top center;}
+
+/*---------------middle_box-----------------*/
+.middle_box{
+	width: 654px;
+	height: 450px;
+	background: url(images/center_box_bg.gif) no-repeat center;
+	margin: 10px auto;
+}
+.middle_box_text_content{
+	width: auto;
+	height: auto;
+	alignment-adjust: central;
+	alignment-baseline: middle;
+}
+.middle_box_title{
+width:260px;
+height:63px;
+padding:5px;
+background:url(images/box_title_bg.gif) no-repeat center;
+}
+p.middle_text{
+	alignment-adjust:middle;
+}
+
+/*----------------left_content------------*/
+.left_content{
+width:345px;
+float:left;
+padding:10px;
+}
+.calendar_box{
+width:329px;
+height:185px;
+background:url(images/calendar_bg.gif) no-repeat center;
+}
+.calendar_box_content{
+width:260px;
+padding-left:53px;
+}
+.right_content{
+width:310px;
+float:left;
+padding:10px 0 0 0;
+}
+.news_left{
+padding:10px 0 0 10px;
+}
+.project_box{
+clear:both;
+padding:10px 0 15px 0;
+}
+.project_box_portofolio{
+float:left;
+padding:10px 15px 15px 15px;
+}
+
+.news_box{
+padding:5px 0 5px 0;
+}
+.calendar{
+width:42px;
+height:47px;
+float:left;
+background:url(images/calendar_icon.gif) no-repeat center;
+text-align:center;
+line-height:47px;
+font-size:14px;
+font-weight:bold;
+color:#5d2c1a;
+}
+.news_content{
+width:270px;
+float:left;
+padding:0 0 0 10px;
+}
+a.read_more{
+width:75px;
+height:29px;
+display:block;
+float:right;
+margin:5px;
+background:url(images/link_more_bg.gif) no-repeat center;
+text-decoration:none;
+color:#6c331f;
+text-align:center;
+line-height:29px;
+}
+a.read_more_a{
+width:75px;
+height:29px;
+display:block;
+float:right;
+margin:5px;
+background:url(images/link_more_bg_a.gif) no-repeat center;
+text-decoration:none;
+color:#dcc1b7;
+text-align:center;
+line-height:29px;
+}
+.wide_content{
+width:660px;
+clear:both;
+padding:0 20px 0 20px;
+}
+.projects_navigation{
+padding-right:250px;
+}
+p.contact_info{
+padding:10px 0 0 20px;
+line-height:18px;
+}
+span.orange{
+color:#f89824;
+}
+/*-----------------------contact_form-------------------*/
+#contact_form{
+width:300px;
+height:auto;
+padding:10px 0 0 20px;
+}
+.form_row{
+float:left;
+padding:8px 0 8px 0;
+}
+label{
+width:55px;
+float:left;
+padding:3px 5px 0 0;
+color:#8ebb41;
+text-align:right;
+}
+input.contact_input{
+width:225px;
+height:18px;
+float:left;
+border:1px #d1e0ee solid;
+background-color:#eef4d7;
+color: #000;
+}
+textarea.contact_textarea{
+width:225px;
+height:80px;
+float:left;
+border:1px #d1e0ee solid;
+background-color:#eef4d7;
+color: #000;
+}
+/*----------------------services-------------------------*/
+.services{
+float:left;
+}
+.services ul{
+list-style:none;
+padding:15px 10px 5px 0;
+margin:0px;
+}
+.services ul li{
+padding:5px;
+}
+.services ul li a{
+background:url(images/arrow.gif) no-repeat left;
+padding:0 0 0 25px;
+text-decoration:none;
+color:#416271;
+}
+
+
+/*--------------------footer--------------------*/
+#footer{
+width:680px;
+height:16px;
+clear:both;
+color:#763c26;
+padding:30px 0 0 20px;
+background:url(images/footer_bg.gif) no-repeat center;
+}
+
+#lobo
+ {
+	 alignment-adjust:auto;
+	 alignment-baseline:central; 
+ }
+#lo
+
+{
+	top:0px;
+	left:0px;
+	
+}
+
+#shuffle
+{
+	height: 265px;
+	width: 202px;
+	position: absolute;
+	top: 403px;
+	left: 536px;
+}
+
+
+
+</style>
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="iecss.css" />
+<![endif]-->
+</head><body>
+
+<div id="main_container">
+  <div class="main_content">
+   	  <div id="header">
+        	<div class="logo"><a href="#"></a></div>
+        </div>
+        <div class="top_center_box"></div>
+        <div class="center_box">
+
+    
+            <div id="menu_tab">                                     
+                    <ul class="menu">                                                                               
+                         <li><a href="index.html" class="nav"> Home </a></li>
+                         <li class="divider"></li>
+                         <li><a href="anime.html" class="nav_selected">Anime </a></li>
+                         <li class="divider"></li>
+                         <li><a href="manga.html" class="nav"> Manga</a></li>
+                         <li class="divider"></li>
+                         <li><a href="galge.html" class="nav"> Galge</a></li>
+                         <li class="divider"></li>
+                         <li><a href="rikku.html" class="nav"> Contact </a></li>
+
+                    </ul>
+            </div> 
+            
+            <div class="middle_box">
+            	<div class="middle_box_text_content">
+            	  <p class="middle_text"></p>
+  <table>
+  <tr><td width="420" height="494">          	
+<h2 align="center">
+SHUFFLE!
+</h2>
+<p align="center">
+This anime really moved me. Also I beleve that this masterpiece should be at the top of everyone’s anime queue. <br> This story revolves around rin and his relationships with five girls. <br> Before thus story takes place a magic door to bolth heaven and hell is found.  <br>Ever sence then angels, demons, an humans have been traveling to earth,heaven, and hell. <br>after the fist day of school ren finds out that has has been engaged to the daughter <br> of the king of angels and the daughter of the king of demons be this complcates thing with his current love intrest and child hood friend asa.  <br>Here is a better synopsis of the show from friends over at The Anime News Network.
+
+<br> <br>
+<i>
+When two doors are discovered in an ancient ruin, the gateways to <br> shinkai, the realm of the shinzoku (Gods) and makai, the realm of the <br> mazoku (Demons) are irreversably opened. The races of human, <br> shinzoku, and mazoku come together in the mortal world and nothing <br> will ever be the same. One day, two new families move next door to a <br> boy who had previously been living a very peaceful life. In one <br> house lived the family of the King of the Gods, and in the other <br> lived the family of the King of the Demons. Both families had one <br> daughter  whose single wish to live next to the boy they had    <br>fallen in love with years ago has just been fulfilled. Also  <br>living  with the boy is his childhood friend. With these three girls   <br>vying for his affections, the boy finds that his new life filled  <br>with  despair, jealousy, and just a little hope is beginning. <br> </i>-<a href="http://www.animenewsnetwork.com/encyclopedia/anime.php?id=5375">ANN</a> <br> <br>
+
+Overall: 10/10 <br>
+Concept: 10/10 <br>
+Art: 10/10   <br>
+Rewatch Value: 10/10 <br>
+<br><br>
+                
+  </p>              
+   </td>    
+   <td width="222" align="center"><img src="shug.jpg" width="186" height="247" top="0px" left="0px">
+</td></tr></table>         
+                
+                
+                </div>
+            
+            
+            </div>
+            
+            <div class="left_content"></div><!--end of left content-->
+
+
+            <div class="right_content">
+            
+         
+                <h1></h1>
+                
+               
+                   
+            
+          </div><!--end of right content-->
+
+
+	<div id="footer">
+      <a href="http://www.webpagedesign.com.au">Art for the web</a>
+    
+    </div>
+
+
+		</div> <!--end of center box-->
+	</div> <!--end of main content-->
+</div> <!--end of main container-->
+</body></html>

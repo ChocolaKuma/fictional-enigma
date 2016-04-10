@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Working with Forms</title>
+<meta charset="utf-8">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1 {
+	text-align: center;
+}
+/* Table Elements */
+
+legend {
+	background-color: #f93;
+	border: 1px solid #f00;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+section {
+	width: 550px;
+	margin: 20px auto;
+}
+/* Centers validation text */
+#validation {
+	text-align: center;
+}
+td {
+	vertical-align:top;
+}
+fieldset
+{
+	text-align:left;
+	padding:5px;
+	background-color:#eee
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<!-- Step 1 --> 
+<h1>Music Survey</h1>
+<fieldset>
+<legend><strong>Your Information</strong></legend>
+
+<table>
+<tr>
+<td> Name:</td>
+<td><input type="text" name="Full Name" id="username" size="30" tabindex="1" required placeholder="Full Name" autofocus></td>
+</tr><tr>
+<td> Email:</td>
+<td><input type="email" name="Email Address" id="email" size="30" tabindex="2" required placeholder="Email Address" autofocus></td>
+</tr><tr>
+<td> Phone Number:</td>
+<td><input type="tel" name="Phone Number" id="phone" size="30" tabindex="3" required placeholder="Phone Number" autofocus></td>
+</tr><tr>
+<td>I am:</td>
+<td><input type="radio" name="sex" id="custsexm" tabindex="4" > Male&nbsp; <input name="sex" type="radio" value="female" id="custsexf" tabindex="5">Female</td>
+</tr><tr>
+<td>Age:</td>
+<td>
+<input type="range" id="range" name="age" value="0" min="0" max="99" tabindex="6" step="1"><output name="x" for="range"></output>Years Old
+</td>
+</tr>
+</table>
+</fieldset>
+<!-- Step 2 --> 
+<fieldset>
+<legend><strong>Step Two: Share Your Thoughts</strong></legend>
+<br>
+<label>How has music Influenced your life?</label>
+<p> <textarea name="Comments" id="usercomments" cols="60" row="7" tabindex="14" onFocus="javascript:this.value+'',"> Place Your Comments Here</textarea> 
+<!-- Step 3 -->
+<section>
+<fieldset>
+<legend><strong>Send It!</strong></legend>
+<br>
+<input id="submit" type="submit" value="Complete Survey" tabindex="15">
+&nbsp;<input id="reset" type="reset" value="Reset" tabindex="16">
+<br><br><br>
+<a href="http://validator.w3.org/check?uri=referer" title="HTML5 validation">HTML5 Validation</a>
+</body>
+</html>
